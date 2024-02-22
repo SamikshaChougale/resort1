@@ -1007,7 +1007,8 @@ h3 {
 }
 
 .about_area .about_thumb img {
-    width: 100%;
+    width: 320px;
+    height: 300px;
 }
 
 .about_area .about_thumb .img_2 {
@@ -1021,8 +1022,9 @@ h3 {
     }
 }
 
-.about_area .about_thumb2 img {
-    width: 100%;
+.about_thumb2 img {
+    width: 320px;
+    height: 300px;
 }
 
 .about_area .about_thumb2 .img_2 {
@@ -1412,6 +1414,10 @@ h3 {
     .features_room .rooms_here .single_rooms .room_thumb .room_heading {
         padding: 20px
     }
+    .features_room .rooms_here .single_rooms .room_thumb img{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1661,7 +1667,26 @@ h3 {
 
 #test-form .white-popup-block input {
     width: 100%;
-    height: 50px
+    height: 50px;
+}
+
+@media (min-width: 767px){
+    #test-form .white-popup-block input{
+        width: 50px;
+        height: 20px;
+    }
+    #test-form .white-popup-block{
+        width: 150px;
+        height: 300px;
+    }
+    #test-form .white-popup-block .button{
+        width: 20px;
+        height: 20px;
+    }
+    .gj-datepicker input{
+        width: 50px;
+        height: 20px;
+    }
 }
 
 .gj-datepicker input {
