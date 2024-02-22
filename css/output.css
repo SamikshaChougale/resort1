@@ -1662,7 +1662,7 @@ h3 {
 }
 
 #test-form .white-popup-block .popup_inner .gj-datepicker span {
-    color: red
+    color: red;
 }
 
 #test-form .white-popup-block input {
@@ -1670,24 +1670,32 @@ h3 {
     height: 50px;
 }
 
-@media (min-width: 767px){
-    #test-form .white-popup-block input{
-        width: 50px;
-        height: 20px;
+@media (max-width: 767px) {
+        .popup_box {
+            width: 90%; /* Set width to 90% of the viewport width */
+        min-width: unset; /* Remove minimum width */
+        max-width: 400px; /* Limit maximum width for better readability */
+        min-height: 200px; /* Set the minimum height */
+        height: auto; /* Let the content determine the height */
+        max-height: 80vh; /* Limit maximum height to 80% of the viewport height */
+        overflow-y: auto;
+        }
+    .col-xl-6 {
+        width: 100%; /* Make the columns full width */
+        margin-bottom: 10px; /* Add some spacing between columns */
     }
-    #test-form .white-popup-block{
-        width: 150px;
-        height: 300px;
+
+    input[type="text"],
+    select {
+        font-size: 14px;
     }
-    #test-form .white-popup-block .button{
-        width: 20px;
-        height: 20px;
-    }
-    .gj-datepicker input{
-        width: 50px;
-        height: 20px;
+
+    /* Center align the submit button */
+    .col-xl-12 {
+        text-align: center;
     }
 }
+
 
 .gj-datepicker input {
     width: 100%;
